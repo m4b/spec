@@ -27,4 +27,4 @@
   (export "ack" 0)
 )
 
-(invoke "ack" (const.i64 3) (const.i64 5))  ;; 253 : i64
+(asserteq (invoke "ack" (const.i64 3) (const.i64 5)) (const.i64 253))

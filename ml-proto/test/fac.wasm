@@ -33,5 +33,5 @@
   (export "iter_fac" 1)
 )
 
-(invoke "rec_fac" (const.i64 25))  ;; 7034535277573963776 : i64
-(invoke "iter_fac" (const.i64 25))  ;; 7034535277573963776 : i64
+(asserteq (invoke "rec_fac" (const.i64 25)) (const.i64 7034535277573963776))
+(asserteq (invoke "iter_fac" (const.i64 25)) (const.i64 7034535277573963776))
